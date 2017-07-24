@@ -15,10 +15,15 @@
   <hr>
 
 
-  <ul style= "list-style-type:none">
+  <ul style= "list-style-type:none;">
     <font size= "5%;">
-    <li><a href="url">https://www.youtube.com//</a></li>
+    <center><li><a href= "https://www.macys.com/"></a></li></center>
+    <center><li><a href= "https://www.pottermore.com/"></a></li></center>
+    <center><li><a href= "https://youtu.be/tSDcbucrWmw"></a></li></center>
+    <center><li><a href= "https://www.youtube.com/watch?v=VFlZXlfda6Y"></a></li></center>
   </ul>
+
+
   <ul style= "float:right;list-style-type:none">
     <font size="5%">
       <b>LIKES:</b>
@@ -30,13 +35,49 @@
       <li>Women's clothing</li>
       <li>Aries</li>
   </ul>
-  <center><img src="ww.jpg" alt="HTML5 Icon" style="width:200px;height:300px;padding:1px;margin-right:10px"/></center>&ensp;&ensp;
+
+
+  <ul style= "float:left;list-style-type:none;">
+    <font size="5%">
+      <b>FUN FACTS:</b>
+      <li>1. Also known as</li>
+      <li>Wonder Woman.</li>
+      <li>2. She has a</li>
+      <li>lasso-of-truth.</li>
+      <li>3. She was blessed</li>
+      <li>by the Greek gods</li>
+      <li>with different powers.</li>
+      <li>4. She was able to</li>
+      <li>cut Superman with</li>
+      <li>her tiara.</li>
+  </ul>
+
+  <center><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="ww.jpg" alt="HTML5 Icon" width="200px" height="300px"></center>&ensp;&ensp;
+  <script>
+function bigImg(x) {
+    x.style.height = "500px";
+    x.style.width = "400px";
+}
+
+function normalImg(x) {
+    x.style.height = "300px";
+    x.style.width = "200px";
+}
+</script>
+
+
   <p>
     <b>BIO:</b>
   </p>
-  <p>
+  <p id="demo" style="display:none">
     <i>Diana Prince</i> is an Amazonian princess from the island of Themyscira. She was molded from clay by her mother, Hippolyta, and brought to life by her father, Zeus. She came to Earth to fight the war against Aries and save all of humanity from his cruel influence. After her time on Earth, she learned that there is both light and dark in humankind...So she stayed, she fights, and she gives back for the world she knows that Earth can be.
   </p>
+  <button type="button" onclick="document.getElementById('demo').style.display='block'">CLICK FOR BIO</button>
+
+  <script>
+  window.alert
+  ("WELCOME TO THE STORY OF DIANA PRINCE")
+  </script>
 
 </body>
 
